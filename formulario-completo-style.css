@@ -1,0 +1,310 @@
+/*<!--Seteos iniciales __________________________________________________________________________________________________________________________________________________________________________________-->
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--______________________________________________________________________________________________________________________________________________________________________________________-->*/
+@media (max-width: 100000px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+
+  body {
+    font-size: 1.6rem;
+    font-family: sans-serif;
+  }
+
+  .contenedor-general {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+  }
+
+  section {
+    padding-top: 5rem;
+  }
+
+  /*links..........................................................................................*/
+  a,
+  a:visited,
+  a:hover,
+  a:active {
+    text-decoration: none;
+    color: unset;
+  }
+
+  /*footer____________________________________________________________________________________________________________*/
+  @media (max-width: 100000px) {
+    footer {
+      color: rgba(240, 248, 255, 0.568);
+      height: fit-content;
+      padding: 2rem;
+      background-color: rgb(5, 42, 67);
+      margin-top: 4rem;
+      position: relative;
+    }
+
+    .img-logo-footer {
+      height: 5rem;
+      margin-bottom: 1rem;
+    }
+
+    .contenedor-footer {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: 4rem;
+    }
+
+    @media (max-width: 550px) {
+      .contenedor-footer {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+    .contenedor-footer span {
+      color: aliceblue;
+      font-weight: 400;
+    }
+
+    .map-footer {
+      padding: 4rem;
+      height: 35rem;
+      width: 35rem;
+      display: none;
+    }
+
+    .contenedor-footer div {
+      margin-top: 2rem;
+    }
+
+    footer a {
+      display: block;
+      margin-bottom: 1rem;
+    }
+    .contenedor-derechos-reservados {
+      width: 100vw;
+      background-color: black;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    .p-derechos-reservados {
+      display: block;
+      width: fit-content;
+      font-size: 1.3rem;
+      margin: 0 auto 0 auto;
+    }
+  }
+
+  /*Nav............................................................................................*/
+  .logo-nav{
+    height: 2rem;
+  }
+
+  nav {
+    background-color: rgb(16, 93, 145);
+    color: aliceblue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+    list-style: none;
+  }
+
+  nav a{
+    display: flex;
+    justify-content: center;
+    gap:0.5rem
+  }
+
+  /*Link wsp flotante............................................................................................*/
+  .link-wsp-flotante {
+    height: fit-content;
+    position: fixed;
+    bottom: 3rem;
+    right: 3em;
+    background-color: rgb(25, 184, 25);
+    border: 0.5rem rgb(25, 184, 25) solid;
+    box-shadow: 0.1rem 0.1rem 0.5rem black;
+    border-radius: 100%;
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+  }
+
+  .img-logo-wsp2 {
+    height: 5rem;
+  }
+}
+
+/*Sección Formulario-largo____________________________________________________________________________________________________________*/
+@media (max-width: 100000px) {
+  .seccion-formulario-largo {
+    padding: 5rem 2rem 2rem 2rem;
+  }
+
+  .mensaje-inicial {
+    padding: 2rem 2rem 2rem 2rem;
+    font-size: 1.6rem;
+    line-height: 3.5rem;
+  }
+
+  .mensaje-inicial p {
+    margin-bottom: 2rem;
+  }
+
+  .contenedor-formulario-largo {
+    background-color: rgba(5, 42, 67, 0.13);
+    padding: 2rem;
+  }
+
+  .sub-contenedor-formulario-largo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 1100px) {
+    .sub-contenedor-formulario-largo {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .sub-contenedor-formulario-largo {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  .sub-contenedor-formulario-largo p {
+    color: rgb(75, 71, 71);
+    font-size: 1.4rem;
+  }
+
+  .contenedor-formulario-largo div {
+    padding: 1rem;
+  }
+
+  .contenedor-formulario-largo div h3 {
+    border-bottom: 0.25rem solid black;
+  }
+
+  input {
+    height: 3rem;
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .boton-enviar-2 {
+    border-radius: 10px;
+    padding: 1rem 2rem 1rem 2rem;
+    display: block;
+    background-color: rgba(5, 42, 67, 0.13);
+    margin: 0 auto 0 auto;
+  }
+
+  .selector {
+    margin-bottom: 1rem;
+    height: 3rem;
+  }
+
+  .selector-estado-civil,
+  .selector-regimen-matrimonial,
+  .selecto-comuna,
+  .selecto-región,
+  .selector-materia {
+    display: block;
+    width: 100%;
+  }
+
+  .texto{
+    display: block;
+    width: 100%;
+    height: 5rem;
+  }
+  }
+
+  /*__________*/
+  /*__________*/
+  /*__________*/
+  /*__________*/
+
+  /*
+  .contenedor-formulario {
+    border-radius: 10px;
+    background-color: rgb(23, 116, 179);
+    margin: 0 auto 0 auto;
+    width: fit-content;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 350px) {
+    .contenedor-formulario {
+      padding: 0;
+    }
+  }
+
+  label,
+  input,
+  textarea {
+    display: block;
+    width: 40rem;
+  }
+
+  @media (max-width: 500px) {
+    label,
+    input,
+    textarea {
+      width: 80vw;
+    }
+  }
+
+  input,
+  textarea {
+    height: 2.5rem;
+    font-family: sans-serif;
+    background-color: rgba(241, 241, 241, 0.856);
+    border: solid black 0.1rem;
+    padding: 0.5rem;
+  }
+
+  input:focus,
+  textarea:focus {
+    border: solid black 0.1rem;
+    background-color: white;
+  }
+
+  textarea {
+    height: 10rem;
+  }
+
+  .boton-enviar {
+    display: block;
+    background-color: rgba(16, 93, 145, 0.925);
+    padding: 0.5rem;
+    margin: 0.5rem auto 0 auto;
+    color: aliceblue;
+    border: rgb(2, 23, 37) 5px outset;
+    border-radius: 5px;
+  }
+
+  .boton-enviar:hover {
+    background-color: rgba(12, 93, 146, 0.925);
+    border: rgb(57, 106, 139) 5px outset;
+  }
+
+  .boton-enviar:active {
+    border: rgb(2, 23, 37) 5px inset;
+  }*/
+}
